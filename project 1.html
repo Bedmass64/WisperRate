@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Restaurant Reviews</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Sets background to black */
+            color: white; /* Sets text color to white for better visibility */
+            overflow-x: hidden; /* Prevents scroll on x-axis */
+            height: 100%; /* Full height */
+            display: flex;
+            flex-direction: column; /* Organizes content in a column */
+        }
+        header {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        nav {
+            background-color: rgba(192, 255, 252, 0.486); /* Sets the background color of the nav bar to pink */
+            text-align: center;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center; /* Centers the icons horizontally */
+            align-items: center; /* Centers the icons vertically */
+        }
+        .nav-icon {
+            margin: 0 10px; /* Space between icons */
+            color: rgb(0, 0, 0); /* Icon color */
+            font-size: 24px; /* Icon size */
+        }
+        .search-bar-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            padding: 20px 0; /* Adds vertical spacing */
+            width: 100%; /* Full width of container */
+        }
+        .search-bar {
+            width: 80%; /* Sets the width of the search bar */
+            display: auto;
+            justify-content: center; /* Align form elements */        }
+        .search-bar input,
+        .search-bar button {
+            padding: 15px;
+            margin: 10px ;
+            width: 125%; /* Makes input and button fill the container */
+        }
+        .search-bar img, .search-bar svg {
+            height: 100px; /* Fixed height for search icon */
+        }
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Hides scrollbar for Firefox */
+            margin-top: 20px; /* Adds space above the cards */
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none; /* Hides scrollbar for Chrome, Safari, and Opera */
+        }
+        .card {
+            flex: 0 0 auto;
+            width: 300px; /* Fixed width, adjust as needed */
+            margin: 10px;
+            background-color: rgb(255, 0, 0); /* Sets card background to yellow */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden; /* Ensures content doesn't spill outside the border */
+        }
+        .card img {
+            width: 100%; /* Ensure image covers the card width */
+            height: 150px; /* Fixed height for images */
+            object-fit: cover; /* Ensures image covers the space without distortion */
+        }
+        .card-info {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            text-align: center;
+            margin-top: auto; /* Pushes footer to bottom */
+            background-color: #1605ff;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wisper rats</h1>
+    </header>
+    <nav>
+        <!-- Navigation icons using Unicode symbols as placeholders -->
+        <span class="nav-icon">&#8962; Home</span> <!-- House symbol for Home -->
+        <span class="nav-icon">&#8505; About</span> <!-- Info symbol for About -->
+        <span class="nav-icon">&#9742; Call</span>  <!-- Telephone symbol for Call -->
+    </nav>
+        <form class="search-bar" action="#" method="GET">
+            <input type="text" name="search" placeholder="Search reviews...">
+            <button type="submit">Search</button>
+        </form>
+    <div class="scroll-container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaok8Kn6DXdp6A6qyuntRgihBk5VuFVlTwg3k6XZi238u1gcM2VTH-GJFNcjz2PEzsQFY&usqp=CAU" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>The Real Scoop</h2>
+                <p>3.9 ★ - 1.1km away - 20 min wait</p>
+                <p>Enjoy delightful ice cream and espresso.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vK3dTIaw1DTfZsAkf85Hsd57DeM8pQglnQ&s" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Annapolis Cider Company</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://goodcheertrail.com/wp-content/uploads/2018/04/horton-ridge-2.jpg" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Horton Ridge Malt & Grain</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images-pw.pixieset.com/elementfield/093905341/White_Recipe_box_cards_Simple_3-5497cb1c.jpg" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>The Naked Crepe Bistro Inc</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/5daf293e737e0c32902627f6/1572877507500-KOOO6NGPQSPJGQQ95LGL/Juniper_Logo%2Bfood%2Bwine_Primary.png" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Juniper Food + Wine</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJi1PuXFpaAP0jOZzo6eZSSCJIw8DZ6b4CdA&s" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Paddy's Brewpub & Rosie's Family Restaurant</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.squarespace-cdn.com/content/v1/5f6a9b614f6fb9725851cd75/1601862006472-82RQUE6KUGG4Y4WJP7FA/Harvest+Brewhouse+Logo+no+white.png" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Millstone Harvest Brewhouse</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://novascotia.com/wp-content/uploads/2024/09/37609.webp" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Tangled Garden</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWogd09H9RjK0LxaHWjk6FObr2RhUFzinl7Q&s" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Old Orchard Inn & Spa</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdgMw14SPJRR-r-4aukBGt7c-fTWgTcW1bw&s" alt="Restaurant Image">
+            <div class="card-info">
+                <h2>Mercator Vineyards</h2>
+                <p>4.6 ★ - 1.0km away - 15 min wait</p>
+                <p>Experience unique cider varieties.</p>
+            </div>
+        </div>
+        <!-- More cards can be added following the same structure -->
+    </div>
+    <footer>
+        <p>Review Page © 2025</p>
+    </footer>
+</body>
+</html>
