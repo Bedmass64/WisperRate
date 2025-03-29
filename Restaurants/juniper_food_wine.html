@@ -56,20 +56,43 @@
 
             </div>
         </nav>
-
-          <!-- Search Form -->
-        <div class="container my-4">
-        <form class="row g-2 justify-content-center" action="#" method="GET">
-            <div class="col-md-8">
-                <input type="text" name="search" class="form-control" placeholder="Search Restaurant...">
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary">Search</button>
-            </div>
-        </form>
-        </div>
-        
         <h3 style="text-align: center;">Juniper Food + Wine</h3>
+
+            <!-- Reviews Slideshow Section -->
+    <section class="container my-4">
+        <h3 style="text-align: center;">Customer Reviews</h3>
+        <div class="scroll-container">
+          <!-- Existing hard-coded review cards -->
+          <div class="card mx-2" style="min-width: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">"Amazing experience! The ambiance and service were top-notch."</p>
+              <p class="card-text"><small>Rating: 5 ★</small></p>
+            </div>
+          </div>
+          <div class="card mx-2" style="min-width: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">"Great food, though a bit pricey. I’d definitely come back!"</p>
+              <p class="card-text"><small>Rating: 4 ★</small></p>
+            </div>
+          </div>
+          <div class="card mx-2" style="min-width: 300px;">
+            <div class="card-body">
+              <h5 class="card-title">Alex Johnson</h5>
+              <p class="card-text">"The dessert selection was incredible. Loved every bite!"</p>
+              <p class="card-text"><small>Rating: 4.5 ★</small></p>
+            </div>
+          </div>
+          <!-- Additional reviews added via submit_review.html will appear below -->
+        </div>
+      </section>
+      
+      <!-- Submit Review Button -->
+      <div class="container text-center my-4">
+        <a href="submit_review.html" class="btn btn-primary">Submit Review</a>
+      </div>
+      
          <!-- Footer -->
   <footer class="bg-primary text-white text-center py-3 mt-auto">
     <p>Review Page © 2025</p>
